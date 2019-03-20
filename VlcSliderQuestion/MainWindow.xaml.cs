@@ -23,6 +23,7 @@ namespace VlcSliderQuestion
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
