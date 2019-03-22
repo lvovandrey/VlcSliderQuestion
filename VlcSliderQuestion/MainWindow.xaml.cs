@@ -23,7 +23,11 @@ namespace VlcSliderQuestion
         public MainWindow()
         {
             InitializeComponent();
+        }
 
+        private void Slider_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            vlc.ChangePosition(((Slider)sender).Value);
         }
     }
 }

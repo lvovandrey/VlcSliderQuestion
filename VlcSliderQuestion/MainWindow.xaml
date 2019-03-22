@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <local:Player x:Name="vlc" />
+        <StackPanel>
+            <local:Player x:Name="vlc" Height="380" />
+            <Slider Maximum="1000" Value="{Binding ElementName=vlc, Path=Position}" PreviewMouseUp="Slider_PreviewMouseUp" />
+            <Label Content="{Binding ElementName=vlc, Path=Position}"/>
+        </StackPanel>
+        
     </Grid>
 </Window>

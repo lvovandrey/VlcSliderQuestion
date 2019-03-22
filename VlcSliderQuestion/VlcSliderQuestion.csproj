@@ -139,8 +139,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Resource Include="ico\icon.png" />
-    <Resource Include="ico\mute.png" />
     <Resource Include="ico\play_pause.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
